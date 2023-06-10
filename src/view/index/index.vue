@@ -51,7 +51,7 @@ export default {
 	},
 	methods: {
 		navTo(item) {
-			window.open(item.url)
+			window.open(item.url, '_blank')
 			// console.log(item)
 		}
 	}
