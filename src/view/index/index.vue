@@ -2,7 +2,7 @@
 	<div class="content">
 		<div class="content-title">Ai产品</div>
 		<van-grid class="content-grid" :column-num="2" :gutter="10">
-			<van-grid-item v-for="(item, index) in apps" :key="index" :url="item.url" @click="navTo(item)">
+			<van-grid-item v-for="(item, index) in apps" :key="index" @click="navTo(item)">
 				<i :class="item.icon" class="van-icon van-icon-photo-o van-grid-item__icon"></i>
 				<span class="van-grid-item__text content-grid-text">{{ item.title }}</span>
 			</van-grid-item>
@@ -51,8 +51,7 @@ export default {
 	},
 	methods: {
 		navTo(item) {
-			window.open(item.url, '_blank')
-			// console.log(item)
+			window.open(item.url, '_blank');
 		}
 	}
 };
