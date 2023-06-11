@@ -43,7 +43,7 @@ export default {
 				},
 				{
 					title: 'ChatPDF',
-					url: 'https://chat-next-web-nu-one.vercel.app/',
+					url: 'http://20.222.146.186:8080/',
 					image: ''
 				}
 			]
