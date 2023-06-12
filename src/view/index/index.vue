@@ -1,5 +1,7 @@
 <template>
 	<div class="content">
+		{{process.env}}
+		{{process.TITLE}}
 		<div class="content-bar">
 			<van-notice-bar
 				left-icon="volume-o"
@@ -37,6 +39,8 @@ export default {
     [NoticeBar.name]: NoticeBar,
     [Image.name]: Image
   },
+	created() {
+	},
 	data() {
 		return {
 			title: process.env.TITLE || 'Ai产品',
