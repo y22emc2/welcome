@@ -1,6 +1,7 @@
 <template>
 	<div class="content">
-		{{env}}
+<!--		{{env}}-->
+<!--		{{JSON.parse(VUE_APP_APPS)}}-->
 		<div class="content-bar">
 			<van-notice-bar
 				left-icon="volume-o"
