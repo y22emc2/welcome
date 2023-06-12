@@ -41,7 +41,7 @@ export default {
 		return {
 			title: process.env.TITLE || 'Ai产品',
 			notice: process.env.NOTICE || '在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。',
-			apps: process.env.APPS || [
+			apps: process.env.APPS && JSON.parse(process.env.APPS) || [
 				{
 					title: 'ChatGPT',
 					url: 'https://chat-next-web-nu-one.vercel.app/',
