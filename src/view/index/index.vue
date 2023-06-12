@@ -1,6 +1,6 @@
 <template>
 	<div class="content">
-		{{env}}
+<!--		{{env}}-->
 		<div class="content-bar">
 			<van-notice-bar
 				left-icon="volume-o"
@@ -42,10 +42,10 @@ export default {
 	},
 	data() {
 		return {
-			env: process.env,
-			title: process.env.TITLE || 'Ai产品',
-			notice: process.env.NOTICE || '在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。',
-			apps: process.env.APPS && JSON.parse(process.env.APPS) || [
+			// env: process.env,
+			title: process.env.VUE_APP_TITLE || 'Ai产品',
+			notice: process.env.VUE_APP_NOTICE || '在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。',
+			apps: process.env.VUE_APP_APPS && JSON.parse(process.env.APPS) || [
 				{
 					title: 'ChatGPT',
 					url: 'https://chat-next-web-nu-one.vercel.app/',
