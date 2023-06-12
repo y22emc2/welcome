@@ -63,7 +63,7 @@ export default {
 				},
 				{
 					title: 'ChatGPT Academic',
-					url: 'http://20.222.146.186:8080/',
+					url: 'http://chat-aca.website/',
 					image: '/static/img/img4.png'
 				}
 			]
